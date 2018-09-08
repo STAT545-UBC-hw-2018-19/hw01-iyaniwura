@@ -8,13 +8,13 @@ This repository was created for homework I. It contains an addition file called 
  
 Prior to coming to UBC, I was at the [*African institute for mathematical sciences*](https://aims.ac.za/) (AIMS), South Africa, where I did a masters of Science in mathematical sciences. My current research involve modeling biological systems, analysis the model using matched asymptotic method, and also solving the models  numerically. Click [*here*]( http://www.math.ubc.ca/~iyaniwura/) for more information on my research and the classes I have thought at UBC. Below are my current supervisors and their specializatons:
 
-1. Michael Ward
-  * Apllied Analysis
-  * Asypmtotic Analysis
-2. Colin Macdonald
-  * Numeircal Analysis
-  * Scientific Computing
-3. Daniel Coombs
-  * Cell signaling 
-  * Modelling Virus dynamics
+1. [*Michael Ward*](https://www.math.ubc.ca/~ward/)
+    * Apllied Analysis
+    * Asypmtotic Analysis
+2. [*Colin Macdonald*](https://www.math.ubc.ca/~cbm/research/)
+    * Numeircal Analysis
+    * Scientific Computing
+3. [*Daniel Coombs*](https://www.math.ubc.ca/~coombs/)
+    * Cell signaling 
+    * Modelling Virus dynamics
  
