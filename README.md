@@ -18,4 +18,10 @@ Prior to coming to UBC, I was at the [*African institute for mathematical scienc
     * Cell signaling 
     * Modelling Virus dynamics
  
-Here is my picture for those who have not met me before: ![Here](/Sarafa.jpg "Title")
+Below is a smple of the code I wrote in Matlab:
+'function plotcircle(x,r)
+theta = 0:0.05:2*pi;
+hold on;
+plot(x(1)+r*cos(theta),x(2)+r*sin(theta));
+axis equal;
+end'
