@@ -19,9 +19,9 @@ Prior to coming to UBC, I was at the [*African institute for mathematical scienc
     * Modelling Virus dynamics
  
 Below is a smple of the code I wrote in Matlab:
-'function plotcircle(x,r)
-theta = 0:0.05:2*pi;
-hold on;
-plot(x(1)+r*cos(theta),x(2)+r*sin(theta));
-axis equal;
-end'
+"function plotcircle(x,r)"
+"theta = 0:0.05:2\*pi;"
+"hold on"
+"plot(x(1)+r\*cos(theta),x(2)+r\*sin(theta))";
+"axis equal;"
+"end"
