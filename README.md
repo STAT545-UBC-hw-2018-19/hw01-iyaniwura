@@ -28,3 +28,4 @@ plot(x(1)+r\*cos(theta),x(2)+r\*sin(theta));
 axis equal;
 end
 ~~~
+This Matlab function plot a circle of radius r centered at position x.
