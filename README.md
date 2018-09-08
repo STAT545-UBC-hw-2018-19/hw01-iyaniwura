@@ -18,4 +18,4 @@ Prior to coming to UBC, I was at the [*African institute for mathematical scienc
     * Cell signaling 
     * Modelling Virus dynamics
  
-Here is my picture for those who have not met me before: ![Alt](/Sarafa.png "Title")
+Here is my picture for those who have not met me before: ![Here](/Sarafa.jpg "Title")
