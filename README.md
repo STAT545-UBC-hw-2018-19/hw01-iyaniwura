@@ -2,6 +2,10 @@
 
 This repository was created for homework I. It contains an addition file called *hw01_instructions.md* which is a Markdown file that contains information about the homework.
 
+I have also added my homework files:
+1. hw01_rabbit.Rmd
+2. hw01_rabbit.md
+
 
 ### A brief information about me
  I am Sarafa Iyaniwura, a third year PhD student at the  [*Department of mathematics*](https://www.math.ubc.ca/) and [*Institute of Applied Mathematics*](http://www.iam.ubc.ca/) of the [*University of British Columbia*](https://www.ubc.ca/), Vancouver.
