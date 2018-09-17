@@ -6,7 +6,7 @@ I have also added my homework files:
 1. hw01_rabbit.Rmd
 2. hw01_rabbit.md
 
-![Drag Racing](sarafa.jpg)
+![Sarafa](sarafa.jpg)
 
 ### A brief information about me
  I am Sarafa Iyaniwura, a third year PhD student at the  [*Department of mathematics*](https://www.math.ubc.ca/) and [*Institute of Applied Mathematics*](http://www.iam.ubc.ca/) of the [*University of British Columbia*](https://www.ubc.ca/), Vancouver.
