@@ -1,0 +1,172 @@
+---
+title: "Rabbit blood pressure"
+author: "Sarafa Iyaniwura"
+date: "September 17, 2018"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    theme: cerulean
+    toc: yes
+  github_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Brief description of the data**: 
+
+In this exercise, a data set containing the blood pressure of five rabbits that were studied after treatment with salime (control) and after treatment with *5-HT_3 antagonist MDL 72222* is explored. Here is a brief description of the fields in the dataset:
+
+1. **BP change** : Blood pressure change as a result of specific dose of the medication or control
+2. **Dose**: The dose of medicine or control administered
+3. **Run**: Identifies the animals in each  group
+4. **Treatment**: Shows whether medicine or control was administered
+5. **Animal**: Identity of the animals
+
+# **Required libraries and loading the data**: 
+## **Calling library**
+```{r}
+require(plyr)
+library(dplyr)
+library(ggplot2) # loads ggplot library
+```
+
+## **Brief description of the data**: 
+We begin by loading the library for the data.
+```{r}
+library(MASS)
+```
+# **Exploring the data**
+## **Structure of the data**
+Let us first look at the stucture of our data.
+```{r}
+str(Rabbit)
+```
+Hmmm, that was **messy**!!! How about the class the data set?
+
+## **Class of the data**
+```{r}
+class(Rabbit)
+```
+
+This means we have a data frame. 
+
+## **Viewing part of the data**
+Now let us take a look at the first few rows of the data using the **head()** command.
+```{r}
+head(Rabbit)
+```
+By default  the head command prints the first six columns of the data. One can also specify the number of rows they will like to display/view. Let us display the first ten rows of our data.
+ 
+
+```{r}
+head(Rabbit,10)
+```
+
+
+Next, we want to display  only the **fields/variables** of our data. 
+
+```{r}
+names(Rabbit)
+```
+
+We can also count the number of rows and columns in our data as follows:
+```{r}
+NR <- nrow(Rabbit)
+NC <- ncol(Rabbit)
+```
+```{r}
+
+cat("Number of rows = ",NR)
+cat("number of columns =",NC)
+```
+We can also check the dimension of our data using the **dim()** command.
+```{r}
+dim(Rabbit)
+```
+This means that our data contains 60 rows and 5 columns. In order words, this means that we have 60 observations or experiments and 5 variables.
+
+Let us diaplay the last few lines of the data.
+```{r}
+tail(Rabbit)
+```
+By default, the tail command also dispalys the last six line of the data, but one can specify the number of rows they want to display. Let us display the last ten rows.
+
+```{r}
+tail(Rabbit,10)
+```
+
+
+The summary of our data can be displayed using the **summary()** command.
+```{r}
+summary(Rabbit)
+```
+This command summarizes our data column by column.
+
+# **Plotting some graphs**
+
+Maybe we can try plot some graphs!
+
+## **Boxplot**
+Let us start with a **boxplot()** of the change in blood pressure cause by each dose given.
+```{r}
+boxplot(BPchange~Dose,Rabbit, main="Blood pressure change",ylab="Blood preesure change", xlab="Dose")
+```
+
+This plot shows the median, upper quartile, lower quartile, maximum, and minimum  change in blood pressure with respect to the administered Dose. It also show the Dose that result in the largest change in the blood pressure of the rabbits is 200.
+
+We can plot a more fancy boxplot.
+
+```{r}
+boxplot(BPchange~Dose, data=Rabbit, col=(c("yellow","red")),main="Rabbit blood pressure change",ylab="Blood preesure change", xlab="Dose")
+```
+
+
+We can also use boxplot to show the median, upper quartile, lower quartile, maximum, and minimum of the BP change for each run of the treatments administered.
+```{r}
+boxplot(BPchange~Run, data=Rabbit, col=(c("yellow","red")),main="Average BP change",ylab="BP change", xlab="Dose")
+```
+
+
+## **ggplot: bar chart**
+Now, let us illustrate how to use **ggplot** for creating bar charts
+```{r}
+ggplot(Rabbit, aes(fill=Animal, y=BPchange, x=Dose)) + 
+    geom_bar(position="dodge", stat="identity")
+```
+
+This chart shows the distribution of change in blood pressure for each does of medication and each Rabbit.
+
+Another way of using the bar chart is shown below. Here, the charts shows the BP change for each animal (the colors) based on the treatment administered.
+```{r}
+ggplot(Rabbit, aes(fill=Animal, y=BPchange, x=Run)) + 
+    geom_bar(position="dodge", stat="identity")
+```
+
+# **Extracting some fields of the data**
+One can also extract the data for each field into a vector.
+
+Creating the vectors, we use the **$** sign as illustrated below.
+
+1. **Blood pressure change**
+```{r}
+BP <- Rabbit$BPchange  # create a vector for BP change
+BP # displays the vectors
+```
+
+2. **Dose**
+```{r}
+DD <- Rabbit$Dose # Dose administered
+DD # displays the vector
+unique(DD) # removes repetition
+```
+
+3. **Animal**
+```{r}
+RAB <- Rabbit$Animal # The animal
+RAB # display the vector
+unique(RAB) # removes repetition
+```
