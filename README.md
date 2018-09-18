@@ -1,10 +1,12 @@
 # Homework I
 
-This repository was created for homework I. It contains an addition file called *hw01_instructions.md* which is a Markdown file that contains information about the homework.
-
-I have also added my homework files:
-1. hw01_rabbit.Rmd
-2. hw01_rabbit.md
+This repository was created for homework I. It contains the following files:
+0. **README file**
+1. **hw01_instructions.md**: A Markdown file that contains information and intructions for the homework.
+2. **hw01_rabbit.Rmd**: A R markdown that contains codes that is used to explore a set of data
+3. **hw01_rabbit.md**: A markdown file containing the same code as in *hw01_rabbit.Rmd*
+4. **hw01_rabbit_files/figure-markdown_github**: This folder contains figures required by the github markdown file to display properly.
+5. **sarafa.jpg**: Contains a picture of me.
 
 ![Sarafa](sarafa.jpg)
 
